@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .size-40 {
+            font-size: 40px;
+        }    
+        .color-primery {
+            color: grey;
+        }    
+        .bg-grey {
+            background: lightGrey;
+        }
+    </style>
+</head>
+<body>
+    <section class=”block”>
+        <h2>Перечень статей</h2>
+         <a href="#">ООП</a> <a href="#">UML</a> <a href="#">DFD </a>
+    </section>
+    <section class=”block”>
+        <h2>ООП</h2>
+        <p>Объе́ктно-ориенти́рованное программи́рование (сокр. ООП) — методология программирования, основанная на
+            представлении
+            программы в виде совокупности взаимодействующих объектов, каждый из которых является экземпляром
+            определённого класса, а клаобразуют иерархию наследования.</p>
+    </section>
+    <section class=”block”>
+        <h2>UML</h2>
+        <p>UML (англ. Unified Modeling Language — унифицированный язык моделирования) — язык графического описания для
+            объектного
+            моделирования в области разработки программного обеспечения, для моделирования бизнес-процессов, системного
+            проектирования иотображения организационных структур.</p>
+    </section>
+    <section class=”block”>
+        <h2>DFD</h2>
+        <p>DFD — общепринятое сокращение от англ. data flow diagrams — диаграммы потоков данных. Так называется
+            методология графичесструктурного анализа, описывающая внешние по отношению к системе источники и адресаты
+            данных, логические функции, потоки данхранилища данных, к которым осуществляется доступ.
+        </p>
+    </section>
+    <script>
+        const mass = document.querySelectorAll('a');
+        const elH = document.querySelector('h2');
+        for(el of mass){
+            el.classList.add('color-primery', 'bg-grey');
+        }
+        elH.classList.add('size-40');
+    </script>
+</body>
+</html>
